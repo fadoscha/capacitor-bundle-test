@@ -8,6 +8,11 @@ let package = Package(
     platforms: [
         .iOS(.v14)
     ],
+    products: [
+        .library(
+            name: "web-app",
+            targets: ["web-app"]),
+    ],
     targets: [
         .target(
             name: "web-app",
