@@ -3,22 +3,4 @@
 
 import PackageDescription
 
-let package = Package(
-    name: "capacitor-bundle-test",
-    platforms: [
-        .iOS(.v14)
-    ],
-    products: [
-        .library(
-            name: "web-app",
-            targets: ["web-app"]),
-    ],
-    targets: [
-        .target(
-            name: "web-app",
-            dependencies: [],
-            resources: [
-                .copy("Resources/public")
-            ]),
-    ]
-)
+let package = Package(name: "capacitor-bundle-test")
