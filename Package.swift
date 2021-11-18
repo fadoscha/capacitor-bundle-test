@@ -3,4 +3,12 @@
 
 import PackageDescription
 
-let package = Package(name: "capacitor-bundle-test")
+let package = Package(
+    name: "capacitor-bundle-test",
+    products: [
+        .executable(name: "capacitor_bundler", targets: ["CapacitorBundler"])
+    ],
+    targets: [
+        .executableTarget(name: "CapacitorBundler")
+    ]
+)
